@@ -1,5 +1,6 @@
-• Nombre completo empezando por apellidos
+x• Nombre completo empezando por apellidos
 Gonzalez Galindo Santiago
+
 • Descripción del repositorio
 
 • Versión de ghc
