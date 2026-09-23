@@ -5,7 +5,7 @@ repositorio donde voy a entregar las prácticas del curso. También investigar u
 
 2. Tiempo requerido en realizar la practica completa
 
-R:Aproximadamente 1 hora y 30 min, 30 min de instalación y 1 de investigación.
+R:Aproximadamente 1 hora, 15 min de instalación y 45 de investigación.
 
 3. Comentarios y problemas a los que te enfrentaste en la instalacion con su respectiva solucion:
 
