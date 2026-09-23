@@ -1,4 +1,4 @@
-1. ¿Cuàles son las principales diferencias entre Haskell y Rust?
+1. ¿Cuáles son las principales diferencias entre Haskell y Rust?
 
 R:La principal diferencia que encontré es la forma en que se programa en cada uno. Haskell es un lenguaje determinado como funcional, significa que todo se hace con funciones que reciben datos y regresan un resultado, sin cambiar en ningun momento las variables. Rust es mas parecido a algo como C, tu escribes instrucciones una tras otra y sí puedes cambiar el valor de una variable.
 
@@ -6,7 +6,7 @@ También leí que Haskell es perezoso, o tambien nombrado como Lazy, o sea que n
 
 Y para agregar como ultimo, aunque puede parecer obvio, se usan para cosas distintas. Mientras que Rust se usa más cuando se necesita que el programa sea muy rápido, Haskell se usa más en cuestiones de investigación y en proyectos donde es muy importante que el código no tenga errores.
 
-2. ¿Por què Haskell no ha alcanzado una adopcion significativa en la industria del Software?
+2. ¿Por qué Haskell no ha alcanzado una adopcion significativa en la industria del Software?
 
 R:Yo creo que la razón principal es que es difícil de aprender. Casi todos empezamos programando en lenguajes como C, Java o Python y Haskell funciona diferente de los conceptos basicos que ya conocemos, no hay cosas como ciclos de for.
 
@@ -14,7 +14,7 @@ Eso puede ocacionar que haya pocos programadores de Haskell, y  a las empresas n
 
 Pero, eso no significa que Haskell no sirva o no se use, se usa en algunas empresas como bancos o empresas de blockchain.
 
-3. Si tuveiras que explicarle a una persona que no es de CC la funcion que cumple GIT frente a la de GitHub ¿Como se lo explicarìas?
+3. Si tuvieras que explicarle a una persona que no es de CC la funcion que cumple GIT frente a la de GitHub ¿Como se lo explicarìas?
 
 R:Git es solo un programa que instalas en tu computadora y que va guardando el historial de tu proyecto. Cada vez que se lo indicas en la terminal desde tu carpeta, se encarga de guardar cómo está tu trabajo en el momento en el que lo guardas, eso sirve ya que si algo sale mal puedes regresar en la linea de trabajo y restaurar cosas. Mientras que GitHub, es una página web donde subes esos proyectos a lo que llamamos "la nube", para que queden guardados de manera segura y los puedas abrir desde otra computadora o que los puedas compartir con otras personas y asi trabajar con conjunto con un equipo.
 
