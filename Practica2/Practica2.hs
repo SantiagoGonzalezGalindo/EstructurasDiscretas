@@ -33,7 +33,6 @@ cashback_monto x b = x * b
 
 minutos_horas :: Int -> String
 minutos_horas x = show (x `div` 60) ++ (if (x `div` 60) == 1 then " hora " else " horas ") ++ "y " ++ show (x `mod` 60)  ++ (if (x `mod` 60) == 1 then " minuto" else " minutos")
-
 {-
     Funcion: esDescendente
     Descripcion: Se reciben 4 parametros y la funcion devuelve un valor de tipo Booleano dependiendo de si los numeros ingresados fueron de manera descendente o si no fueron de manera descendente
@@ -46,6 +45,25 @@ esDescendente x y z w =
           then True
           else False
 
+{-
+    Funcion : imc
+    Descripcion: Calcula el indice de masa corporal (peso entre estatura al cuadrado) y devuelve su clasificacion segun la OMS: bajo, normal, sobrepeso u obesidad. La estatura puede darse en metros o en centimetros: si el numero es mayor que 3 se toma como centimetros y se convierte a metros (se usan where y && aunque no estan en la lista de operaciones permitidas para unir las dos comparaciones y agregarle un rango, y where para agregar la variable llamada valor y metros a las operaciones correspondientes)
+    Uso: imc 53.5 161 = "normal" , imc 53.5 1.61 = "normal"
+-} 
+
+imc :: Float -> Float -> String
+imc x b = if valor < 18.5
+            then "bajo"
+                else if valor >= 18.5 && valor < 25
+                   then "normal"
+                    else if valor >= 25 && valor < 30
+                          then "sobrepeso"
+                            else "obesidad"
+                                where
+                                metros = if b > 3 then b / 100 else b
+                                valor  = x / (metros * metros)
+                                 
+    
 
 
 
