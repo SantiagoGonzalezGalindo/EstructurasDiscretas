@@ -73,7 +73,15 @@ imc x b = if valor < 18.5
 hipotenusa :: Float -> Float -> Float
 hipotenusa x y = sqrt(x^2+ y^2)
 
+{- 
+    Funcion: pendiente
+    Descriprcion: Recibe dos parametros que seran tuplas de dos elementos de
+    tipo flotante (x1, y1) y (x2, y2). Devuelve un valor de tipo flotante que representa la pendiente de la recta que pasa por dos puntos.
+    Uso: pendiente (3.0 , 2.0) (7.0 ,8.0) = 1.5
+-} 
 
+pendiente :: (Float, Float) -> (Float, Float) -> Float
+pendiente (x1, y1) (x2, y2) = (y2-y1)/(x2-x1)
                                  
     
 
