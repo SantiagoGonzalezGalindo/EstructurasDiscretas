@@ -27,12 +27,25 @@ cashback_monto x b = x * b
 
 {-
     Funcion: minutos_horas
-    Descriprcion: Recibe  minutos y devuelve su conversion en horas.
+    Descripcion: Recibe  minutos y devuelve su conversion en horas.
     Uso: minutos_horas 112 = 1 hora y 52 minutos (Se usan div, show y ++ aunque no aparecen en la lista de operaciones permitidas, porque sin ellas no se puede obtener el cociente entero ni devolver el resultado como texto como en el ejemplo.)
 -} 
 
 minutos_horas :: Int -> String
 minutos_horas x = show (x `div` 60) ++ (if (x `div` 60) == 1 then " hora " else " horas ") ++ "y " ++ show (x `mod` 60)  ++ (if (x `mod` 60) == 1 then " minuto" else " minutos")
+
+{-
+    Funcion: esDescendente
+    Descripcion: Se reciben 4 parametros y la funcion devuelve un valor de tipo Booleano dependiendo de si los numeros ingresados fueron de manera descendente o si no fueron de manera descendente
+    Uso: esDescendente 10 9 8 7 = True , esDescendente 10 9 8 9 = False (Aunque no esta en la lista, use && para encadenar la comparacion del mayor que, y asi todo quedara dentro de un if, la comparacion del mayor que es estricta, si dos numeros son iguales entonces entregara "False")
+    -} 
+
+esDescendente :: Int -> Int -> Int -> Int -> Bool
+esDescendente x y z w = 
+        if x > y && y > z && z > w
+          then True
+          else False
+
 
 
 
