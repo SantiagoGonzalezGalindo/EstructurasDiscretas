@@ -25,3 +25,14 @@ cashback x = x / 100
 cashback_monto :: Float -> Float -> Float
 cashback_monto x b = x * b
 
+{-
+    Funcion: minutos_horas
+    Descriprcion: Recibe  minutos y devuelve su conversion en horas.
+    Uso: minutos_horas 112 = 1 hora y 52 minutos (Se usan div, show y ++ aunque no aparecen en la lista de operaciones permitidas, porque sin ellas no se puede obtener el cociente entero ni devolver el resultado como texto como en el ejemplo.)
+-} 
+
+minutos_horas :: Int -> String
+minutos_horas x = show (x `div` 60) ++ (if (x `div` 60) == 1 then " hora " else " horas ") ++ "y " ++ show (x `mod` 60)  ++ (if (x `mod` 60) == 1 then " minuto" else " minutos")
+
+
+
