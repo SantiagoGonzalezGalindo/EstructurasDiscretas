@@ -71,7 +71,7 @@ imc x b = if valor < 18.5
 -} 
 
 hipotenusa :: Float -> Float -> Float
-hipotenusa x y = sqrt(x^2+ y^2)
+hipotenusa x y = sqrt(x^2 + y^2)
 
 {- 
     Funcion: pendiente
@@ -82,6 +82,13 @@ hipotenusa x y = sqrt(x^2+ y^2)
 pendiente :: (Float, Float) -> (Float, Float) -> Float
 pendiente (x1, y1) (x2, y2) = (y2-y1)/(x2-x1)
                                  
+{- 
+    Funcion: distanciaPuntos
+    Descriprcion: Recibe dos parametros que seran tuplas de dos elementos de tipo flotante, es decir (x1, y1) y (x2, y2). La funcion devuelve un valor de tipo flotante que represente la distancia entre los puntos (x1, y1) y (x2, y2)
+    Uso: distanciaPuntos (2.0 , 1.0) (5.0 , 5.0) = 5.0
+-} 
 
+distanciaPuntos :: (Float, Float) -> (Float, Float) -> Float
+distanciaPuntos (x1, y1) (x2, y2) = sqrt((x2-x1)^2 + (y2-y1)^2)
 
 
