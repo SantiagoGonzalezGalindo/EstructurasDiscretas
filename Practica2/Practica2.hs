@@ -5,7 +5,7 @@
 -} 
 
 reconversion :: Float -> Float
-reconversion x = (x / 1000 )
+reconversion x = x / 1000
 
 {- 
     Funcion : cashback
@@ -14,6 +14,13 @@ reconversion x = (x / 1000 )
 -} 
 
 cashback :: Float -> Float
-cashback x = (x / 10)
+cashback x = x / 100
 
+{- 
+    Funcion : cashback_monto
+    Descripcion: Calcula el cashback:
+    Uso: cashback_monto 264 = 26.4
+-} 
 
+cashback_monto :: Float -> Float
+cashback_monto x = x / 10
