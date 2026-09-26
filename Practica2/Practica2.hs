@@ -18,9 +18,10 @@ cashback x = x / 100
 
 {- 
     Funcion : cashback_monto
-    Descripcion: Calcula el cashback:
-    Uso: cashback_monto 264 = 26.4
+    Descripcion: Calcula el cashback en forma de dinero equivalente a la cantidad de puntos. Para calcular el dinero de los puntos acumulados se toma en cuenta el valor por cada punto.
+    Uso: cashback_monto 264 0.10 = 26.4 (El "0.10" Puede ser cualquier cantidad por valor de cada punto)
 -} 
 
-cashback_monto :: Float -> Float
-cashback_monto x = x / 10
+cashback_monto :: Float -> Float -> Float
+cashback_monto x b = x * b
+
