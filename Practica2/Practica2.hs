@@ -14,7 +14,7 @@ reconversion x = x / 1000
 -} 
 
 cashback :: Float -> Float
-cashback x = x / 100
+cashback x = x / 10
 
 {- 
     Funcion : cashback_monto
@@ -28,7 +28,7 @@ cashback_monto x b = x * b
 {-
     Funcion: minutos_horas
     Descripcion: Recibe  minutos y devuelve su conversion en horas.
-    Uso: minutos_horas 112 = 1 hora y 52 minutos (Se usan div, show y ++ aunque no aparecen en la lista de operaciones permitidas, porque sin ellas no se puede obtener el cociente entero ni devolver el resultado como texto como en el ejemplo.)
+    Uso: minutos_horas 112 = "1 hora y 52 minutos" (Se usan div, show y ++ aunque no aparecen en la lista de operaciones permitidas, porque sin ellas no se puede obtener el cociente entero ni devolver el resultado como texto como en el ejemplo.)
 -} 
 
 minutos_horas :: Int -> String
@@ -36,7 +36,7 @@ minutos_horas x = show (x `div` 60) ++ (if (x `div` 60) == 1 then " hora " else 
 {-
     Funcion: esDescendente
     Descripcion: Se reciben 4 parametros y la funcion devuelve un valor de tipo Booleano dependiendo de si los numeros ingresados fueron de manera descendente o si no fueron de manera descendente
-    Uso: esDescendente 10 9 8 7 = True , esDescendente 10 9 8 9 = False (Aunque no esta en la lista, use && para encadenar la comparacion del mayor que, y asi todo quedara dentro de un if, la comparacion del mayor que es estricta, si dos numeros son iguales entonces entregara "False")
+    Uso: esDescendente 10 9 8 7 = True , esDescendente 10 9 8 9 = False (Aunque no esta en la lista, use && para encadenar la comparacion del mayor que, y asi todo quedara dentro de un if, la comparacion del mayor que es estricta, si dos numeros son iguales entonces entregara False)
     -} 
 
 esDescendente :: Int -> Int -> Int -> Int -> Bool
@@ -75,7 +75,7 @@ hipotenusa x y = sqrt(x^2 + y^2)
 
 {- 
     Funcion: pendiente
-    Descriprcion: Recibe dos parametros que seran tuplas de dos elementos de tipo flotante (x1, y1) y (x2, y2). Devuelve un valor de tipo flotante que representa la pendiente de la recta que pasa por dos puntos.
+    Descripcion: Recibe dos parametros que seran tuplas de dos elementos de tipo flotante (x1, y1) y (x2, y2). Devuelve un valor de tipo flotante que representa la pendiente de la recta que pasa por dos puntos.
     Uso: pendiente (3.0 , 2.0) (7.0 ,8.0) = 1.5
 -} 
 
@@ -84,7 +84,7 @@ pendiente (x1, y1) (x2, y2) = (y2-y1)/(x2-x1)
                                  
 {- 
     Funcion: distanciaPuntos
-    Descriprcion: Recibe dos parametros que seran tuplas de dos elementos de tipo flotante, es decir (x1, y1) y (x2, y2). La funcion devuelve un valor de tipo flotante que represente la distancia entre los puntos (x1, y1) y (x2, y2)
+    Descripcion: Recibe dos parametros que seran tuplas de dos elementos de tipo flotante, es decir (x1, y1) y (x2, y2). La funcion devuelve un valor de tipo flotante que represente la distancia entre los puntos (x1, y1) y (x2, y2)
     Uso: distanciaPuntos (2.0 , 1.0) (5.0 , 5.0) = 5.0
 -} 
 
