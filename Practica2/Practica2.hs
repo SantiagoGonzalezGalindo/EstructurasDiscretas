@@ -62,6 +62,18 @@ imc x b = if valor < 18.5
                                 where
                                 metros = if b > 3 then b / 100 else b
                                 valor  = x / (metros * metros)
+
+
+{- 
+    Funcion: hipotenusa
+    Descripcion: Recibe dos parametros de tipo flotante donde "x" representa la base y "y" la altura. Devuelve un valor de tipo flotante que represente el valor de la hipotenusa que se calcula respecto a la base y altura del triangulo rectangulo.
+    Uso: hipotenusa 9.0 12.0 = 15.0
+-} 
+
+hipotenusa :: Float -> Float -> Float
+hipotenusa x y = sqrt(x^2+ y^2)
+
+
                                  
     
 
