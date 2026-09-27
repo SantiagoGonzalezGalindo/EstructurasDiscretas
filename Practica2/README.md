@@ -22,3 +22,5 @@ Fuentes de consulta / Referencias:
 Kaasinen, J., & Lång, J. (s.f.). Haskell MOOC: Part 1. Universidad de Helsinki. Recuperado el 26 de septiembre de 2026, de https://haskell.mooc.fi/part1
 
 Centers for Disease Control and Prevention. (s.f.). Adult BMI categories. Recuperado el 26 de septiembre de 2026, de https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html
+
+![Foto de carga en ghci](carga-ghci.png)
