@@ -16,3 +16,9 @@ R: Termine las nueve funciones en aproximademente 2 horas y media. A esto tambie
 3. Comentarios y problemas a los que te enfrentaste en la instalacion con su respectiva solucion:
 
 R: Tuve principalmente problemas al tener que usar operaciones que no estaban en la lista para hacer mas eficiente la funcion.  Por ejemplo, minutos_horas no se podía resolver solo con lo permitido, e invesigando como podria solucionarlo me encontre con que podia usar operaciones que hacian lo que queria de manera mas "directa".
+
+Fuentes de consulta / Referencias: 
+
+Kaasinen, J., & Lång, J. (s.f.). Haskell MOOC: Part 1. Universidad de Helsinki. Recuperado el 26 de septiembre de 2026, de https://haskell.mooc.fi/part1
+
+Centers for Disease Control and Prevention. (s.f.). Adult BMI categories. Recuperado el 26 de septiembre de 2026, de https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html
