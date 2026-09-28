@@ -33,6 +33,16 @@ cashback_monto x b = x * b
 
 minutos_horas :: Int -> String
 minutos_horas x = show (x `div` 60) ++ (if (x `div` 60) == 1 then " hora " else " horas ") ++ "y " ++ show (x `mod` 60)  ++ (if (x `mod` 60) == 1 then " minuto" else " minutos")
+
+{-
+    Funcion: esEstafa
+    Descripcion: Recibe el costo de la compra (x) el billete grande con el que paga el cliente (y), el billete chico que entrega despues (z) y el cambio que el cliente regresa al final (w). Suma lo que el vendedor recibe y entrega en cada paso de la transaccion, si al final tiene menos que el costo del producto, entonces es una estafa y devuelve True, sino entonces devuelve False.
+    Uso: esEstafa 100 200 100 0 = True , esEstafa 300 500 300 200 = False
+-}
+
+esEstafa :: Float -> Float -> Float -> Float -> Bool
+esEstafa x y z w = (y - (y - x) + z - y + w) < x
+
 {-
     Funcion: esDescendente
     Descripcion: Se reciben 4 parametros y la funcion devuelve un valor de tipo Booleano dependiendo de si los numeros ingresados fueron de manera descendente o si no fueron de manera descendente
