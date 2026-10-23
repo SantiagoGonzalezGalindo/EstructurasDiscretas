@@ -37,3 +37,12 @@ cetes vi (Meses m) = if m == 1
 mensajeCetes :: Float -> Plazo -> String
 mensajeCetes vi (Dias d) = "Despues de " ++ show d ++ " dias, obtuve " ++ show (cetes vi (Dias d) - vi) ++ " de rendimiento bruto sin asumir ningun riesgo crediticio. El monto total de mi inversion es de " ++ show (cetes vi (Dias d)) ++ "."
 mensajeCetes vi (Meses m) = "Despues de " ++ show m ++ (if m == 1 then " mes" else " meses") ++ ", obtuve " ++ show (cetes vi (Meses m) - vi) ++ " de rendimiento bruto sin asumir ningun riesgo crediticio. El monto total de mi inversion es de " ++ show (cetes vi (Meses m)) ++ "."
+
+{-
+    Funcion : negativos
+    Descripcion: Recibe una lista de numeros y cuenta cuantos son negativos. Con la lista por comprension se quedan solo los que son menores que 0 y con length se cuentan.
+    Uso: negativos [-1, 2, 4, 6, -4] = 2
+-}
+
+negativos :: [Int] -> Int
+negativos xs = length [x | x <- xs, x < 0]
