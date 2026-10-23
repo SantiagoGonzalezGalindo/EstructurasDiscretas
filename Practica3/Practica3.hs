@@ -48,3 +48,12 @@ mensajeCetes vi (Meses m) = "Despues de " ++ show m ++ (if m == 1 then " mes" el
 
 negativos :: [Int] -> Int
 negativos xs = length [x | x <- xs, x < 0]
+
+{-
+    Funcion : soloPares
+    Descripcion: Recibe una lista de numeros y regresa solo los que son pares, para eso usa la funcion esParBit del modulo EsParBit.
+    Uso: soloPares [1,2,3,4] = [2,4]
+-}
+
+soloPares :: [Int] -> [Int]
+soloPares xs = [x | x <- xs, esParBit x]
