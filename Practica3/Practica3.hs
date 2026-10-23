@@ -57,3 +57,12 @@ negativos xs = length [x | x <- xs, x < 0]
 
 soloPares :: [Int] -> [Int]
 soloPares xs = [x | x <- xs, esParBit x]
+
+{-
+    Funcion : primos
+    Descripcion: Recibe una lista y regresa solo los numeros primos. Para cada numero hago una lista con sus divisores y si tiene 2: el 1 y el mismo numero, entonces si es primo.
+    Uso: primos [1..20] = [2,3,5,7,11,13,17,19]
+-}
+
+primos :: [Int] -> [Int]
+primos xs = [x | x <- xs, length [d | d <- [1..x], mod x d == 0] == 2]
