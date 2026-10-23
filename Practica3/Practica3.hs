@@ -66,3 +66,12 @@ soloPares xs = [x | x <- xs, esParBit x]
 
 primos :: [Int] -> [Int]
 primos xs = [x | x <- xs, length [d | d <- [1..x], mod x d == 0] == 2]
+
+{-
+    Funcion : coprimos
+    Descripcion: Recibe un numero y regresa los numeros del 1 a ese mismo numero n que son coprimos con n, o sea que no tienen ningun divisor en comun aparte del 1. Para cada x busco los divisores que tienen x y n y si no hay ninguno, es decir, que quede de manera: length 0, entonces es coprimo.
+    Uso: coprimos 10 = [1,3,7,9]
+-}
+
+coprimos :: Int -> [Int]
+coprimos n = [x | x <- [1..n], length [d | d <- [2..x], mod x d == 0, mod n d == 0] == 0]
