@@ -28,3 +28,9 @@ Cuando le pregunto a ghci el tipo de (+), me dice que funciona para cualquier ti
 
 Con :info Num ghci muestra las operaciones de la clase y los tipos que pertenecen a ella, entre ellos Int, Integer, Float y Double.
 
+
+Fuentes de consulta / Referencias:
+
+Conventional Commits. (s.f.). Conventional Commits 1.0.0. Recuperado el 23 de octubre de 2026, de https://www.conventionalcommits.org/en/v1.0.0/
+
+Haskell.org. (s.f.). Prelude. Recuperado el 23 de octubre de 2026, de https://hackage.haskell.org/package/base/docs/Prelude.html
