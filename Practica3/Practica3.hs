@@ -1,3 +1,5 @@
+import EsParBit
+
 {-
     Tipo : Plazo
     Descripcion: Es el tipo de dato para el plazo de la inversion, puede ser en dias o en meses.
