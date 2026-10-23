@@ -12,6 +12,11 @@ R: La práctica sirve para aprender a crear mis propios tipos de datos con data 
 R: Termine la práctica en aproximadamente 4 horas, contando lo que tarde en revisar cada función en ghci y en escribir el README.
 
 
+3. Ejercicio favorito
+
+R: Mi favorito fue mensajeCetes por la forma en la que se tuvo que armar. Como el plazo puede venir como Dias o como Meses tuve que hacer un renglon para cada caso y sacar el numero con (Dias d) y (Meses m). Luego tuve que usar la funcion cetes para sacar el monto final y asi restarle el monto inicial para tener el rendimiento y usar show junto a ++ para juntar todo en un solo texto.
+
+
 Actividad 1. ¿Cuál es la diferencia entre Num e Int?
 
 R: Int es el tipo de los números enteros que tienen un tamaño fijo, como 5 o -3. A diferencia de Int, Num no es un tipo sino una clase de tipo, o sea un grupo de tipos que comparten las mismas operaciones. Todos los tipos que están en Num se pueden sumar, restar y multiplicar y ahí entran Int, Integer, Float y Double. Por lo tanto, Int es uno de los tipos que pertenecen a Num.
