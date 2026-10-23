@@ -7,6 +7,11 @@ R: La práctica sirve para aprender a crear mis propios tipos de datos con data 
 - Hacer un tipo nuevo de commits: commits semánticos, que le dan una forma mas detallada a los commits al especificar el tipo de cambio que se esta haciendo en conjunto de los commits atómicos.
 
 
+2. Tiempo requerido en realizar la practica completa
+
+R: Termine la práctica en aproximadamente 4 horas, contando lo que tarde en revisar cada función en ghci y en escribir el README.
+
+
 Actividad 1. ¿Cuál es la diferencia entre Num e Int?
 
 R: Int es el tipo de los números enteros que tienen un tamaño fijo, como 5 o -3. A diferencia de Int, Num no es un tipo sino una clase de tipo, o sea un grupo de tipos que comparten las mismas operaciones. Todos los tipos que están en Num se pueden sumar, restar y multiplicar y ahí entran Int, Integer, Float y Double. Por lo tanto, Int es uno de los tipos que pertenecen a Num.
