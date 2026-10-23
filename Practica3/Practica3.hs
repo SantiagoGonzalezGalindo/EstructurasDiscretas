@@ -27,3 +27,13 @@ cetes vi (Meses m) = if m == 1
                          else if m == 12
                            then vi * (1 + 0.0744 * 364 / 360)
                            else vi
+
+{-
+    Funcion : mensajeCetes
+    Descripcion: Recibe el monto inicial y el plazo y regresa un mensaje con el plazo, lo que se gano, es decir, el rendimiento y el monto total. Nota: Se usan show y ++ aunque no estan en la lista, porque sin ellas no se puede poner el numero dentro del texto
+    Uso: mensajeCetes 100 (Dias 28) = "Despues de 28 dias, obtuve 0.47366333 de rendimiento bruto sin asumir ningun riesgo crediticio. El monto total de mi inversion es de 100.47366." , mensajeCetes 100 (Meses 1) = "Despues de 1 mes, obtuve 0.47366333 de rendimiento bruto sin asumir ningun riesgo crediticio. El monto total de mi inversion es de 100.47366."
+-}
+
+mensajeCetes :: Float -> Plazo -> String
+mensajeCetes vi (Dias d) = "Despues de " ++ show d ++ " dias, obtuve " ++ show (cetes vi (Dias d) - vi) ++ " de rendimiento bruto sin asumir ningun riesgo crediticio. El monto total de mi inversion es de " ++ show (cetes vi (Dias d)) ++ "."
+mensajeCetes vi (Meses m) = "Despues de " ++ show m ++ (if m == 1 then " mes" else " meses") ++ ", obtuve " ++ show (cetes vi (Meses m) - vi) ++ " de rendimiento bruto sin asumir ningun riesgo crediticio. El monto total de mi inversion es de " ++ show (cetes vi (Meses m)) ++ "."
