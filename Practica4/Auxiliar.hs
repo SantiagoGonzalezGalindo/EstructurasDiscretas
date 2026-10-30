@@ -9,7 +9,7 @@ module Auxiliar where
 
 {-
     Tipo : Natural
-    Descripcion: Es el tipo de dato de los numeros naturales. Cero es el 0 y S n es el sucesor de n, o sea n + 1. Va en este modulo porque las funciones auxiliares lo necesitan.
+    Descripcion: Es el tipo de dato de los numeros naturales. Cero es el 0 y S n es el sucesor de n, o sea n + 1. Va en este modulo porque las funciones auxiliares lo necesitan y Haskell no deja que dos archivos se importen entre si.
     Uso: Cero , S (S Cero)
 -}
 
@@ -24,3 +24,13 @@ data Natural = Cero | S Natural deriving (Eq, Show)
 sumaNat :: Natural -> Natural -> Natural
 sumaNat Cero m = m
 sumaNat (S n) m = S (sumaNat n m)
+
+{-
+    Funcion : multiNat
+    Descripcion: Recibe dos naturales y regresa su producto. Multiplicar es sumar el segundo numero tantas veces como diga el primero, por eso cada S del primero suma una vez el segundo.
+    Uso: multiNat (S (S Cero)) (S (S (S Cero))) = S (S (S (S (S (S Cero)))))
+-}
+
+multiNat :: Natural -> Natural -> Natural
+multiNat Cero m = Cero
+multiNat (S n) m = sumaNat m (multiNat n m)
