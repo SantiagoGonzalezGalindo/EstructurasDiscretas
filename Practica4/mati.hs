@@ -12,3 +12,14 @@
 -}
 
 data Matrioska = Mati | Cont Matrioska deriving (Eq, Show)
+
+{-
+    Funcion : mayorIgual
+    Descripcion: Recibe dos matrioskas y regresa True si la primera es mayor o igual que la segunda. Se van abriendo las dos al mismo tiempo: si la segunda llega a Mati primero o al mismo tiempo, la primera es mayor o igual; si la primera llega a Mati y la segunda todavia tiene muñecas, es menor.
+    Uso: mayorIgual Mati Mati = True , mayorIgual (Cont (Cont Mati)) (Cont (Cont (Cont Mati))) = False
+-}
+
+mayorIgual :: Matrioska -> Matrioska -> Bool
+mayorIgual m Mati = True
+mayorIgual Mati (Cont m) = False
+mayorIgual (Cont n) (Cont m) = mayorIgual n m
