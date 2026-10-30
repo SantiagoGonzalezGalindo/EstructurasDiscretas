@@ -23,3 +23,13 @@ mayorIgual :: Matrioska -> Matrioska -> Bool
 mayorIgual m Mati = True
 mayorIgual Mati (Cont m) = False
 mayorIgual (Cont n) (Cont m) = mayorIgual n m
+
+{-
+    Funcion : aplana
+    Descripcion: Recibe una matrioska y regresa una lista con todas las matrioskas que la forman, de la mas grande a la mas chica. Se pone la matrioska completa al inicio y despues se aplana lo que tiene adentro, hasta llegar a Mati.
+    Uso: aplana Mati = [Mati] , aplana (Cont (Cont Mati)) = [Cont (Cont Mati), Cont Mati, Mati]
+-}
+
+aplana :: Matrioska -> [Matrioska]
+aplana Mati = [Mati]
+aplana (Cont m) = Cont m : aplana m
