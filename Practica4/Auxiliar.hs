@@ -42,3 +42,13 @@ sumaNat (S n) m = S (sumaNat n m)
 multiNat :: Natural -> Natural -> Natural
 multiNat Cero m = Cero
 multiNat (S n) m = sumaNat m (multiNat n m)
+
+{-
+    Funcion : sumaPositivos
+    Descripcion: Recibe dos enteros que sean 0 o positivos y regresa su suma. Funciona igual que sumaNat pero con Zero y Succ. Solo se usa con positivos porque asi la necesita multiEnt.
+    Uso: sumaPositivos (Succ Zero) (Succ (Succ Zero)) = Succ (Succ (Succ Zero))
+-}
+
+sumaPositivos :: Entero -> Entero -> Entero
+sumaPositivos Zero m = m
+sumaPositivos (Succ n) m = Succ (sumaPositivos n m)
