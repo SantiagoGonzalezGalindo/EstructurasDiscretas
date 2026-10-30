@@ -16,6 +16,14 @@ module Auxiliar where
 data Natural = Cero | S Natural deriving (Eq, Show)
 
 {-
+    Tipo : Entero
+    Descripcion: Es el tipo de dato de los numeros enteros. Zero es el 0, Succ n es el sucesor de n y Neg n es el negativo de n. Va en este modulo por la misma razon que Natural.
+    Uso: Zero , Succ (Succ Zero) , Neg (Succ Zero)
+-}
+
+data Entero = Zero | Succ Entero | Neg Entero deriving (Eq, Show)
+
+{-
     Funcion : sumaNat
     Descripcion: Recibe dos naturales y regresa su suma. Si el primero es Cero el resultado es el segundo, y si no, se le quita una S al primero y se le pone afuera al resultado.
     Uso: sumaNat (S Cero) (S (S Cero)) = S (S (S Cero))
