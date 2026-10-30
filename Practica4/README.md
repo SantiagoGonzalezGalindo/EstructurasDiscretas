@@ -17,3 +17,8 @@ En enteros.hs hay uno para cada combinación de signos: positivo, negativo o cer
 
 R: Porque restaEnt necesita saber cuál de los dos positivos es más grande para saber el signo del resultado. Si el primero es mayor entonces la resta sale positiva y sigue con restaEnt n m y si no, entonces voltea la resta y le pone un Neg al resultado. Por ejemplo: para 2 - 5 como 5 es mayor entonces calcula Neg (restaEnt 4 1) que da -3. En entero.hs no hace falta porque baja los dos números al mismo tiempo y el signo sale solo al llegar a Zero.
 
+3. Si pudieras quedarte con una sola implementación. ¿Cuál sería? Justifica tu respuesta.
+
+R: Me quedaría con enteros.hs. Porque entero.hs al probarlo la resta da mal o marca error en todos los casos donde el segundo número es negativo y cuando el primero es negativo y el segundo positivo. En cambio, a enteros.hs solo le faltan los casos de cero con cero: agregando sumaEnt Cero Cero = Cero y restaEnt Cero Cero = Cero, la suma y la resta dan bien en todos los casos.
+
+
