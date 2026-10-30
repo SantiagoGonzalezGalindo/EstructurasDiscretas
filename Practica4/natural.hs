@@ -26,3 +26,13 @@ a_natural n = S (a_natural (n - 1))
 a_entero :: Natural -> Int
 a_entero Cero = 0
 a_entero (S n) = 1 + a_entero n
+
+{-
+    Funcion : potenciaNat
+    Descripcion: Recibe dos naturales y eleva el primero a la potencia del segundo. Cualquier numero a la Cero es S Cero (o sea 1), y si no, se multiplica la base por la potencia con un exponente menos. Usa multiNat del modulo Auxiliar.
+    Uso: potenciaNat (S (S (S Cero))) (S (S Cero)) = S (S (S (S (S (S (S (S (S Cero))))))))
+-}
+
+potenciaNat :: Natural -> Natural -> Natural
+potenciaNat b Cero = S Cero
+potenciaNat b (S e) = multiNat b (potenciaNat b e)
