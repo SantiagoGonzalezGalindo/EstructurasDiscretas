@@ -14,6 +14,10 @@ R: Terminé la práctica en aproximadamente 3 horas y media.
 
 R: Mi favorito fue multiEnt porque tuve que pensar en todos los casos. Primero: si alguno de los dos es Zero el resultado es Zero. Luego con la ley de los signos: si los dos son Neg se les quita el Neg y el resultado queda positivo y si solo uno es Neg el resultado se envuelve en un Neg. Y con los dos positivos: cada Succ del primero suma una vez el segundo, igual que en multiNat pero con sumaPositivos.
 
+4. Comentarios extra
+
+R: Los tipos Natural y Entero los puse en Auxiliar.hs y no en natural.hs y entero.hs porque las funciones auxiliares sumaNat, multiNat y sumaPositivos necesitan esos tipos y si natural.hs importa a Auxiliar y Auxiliar importa a natural.hs entonces Haskell marca error porque no deja que dos archivos se importen entre sí.
+
 La Chivita Recursiva
 
 R: En la canción la chiva no se quiere salir, entonces mandan al burro para que la saque, pero el burro no quiere sacarla y también se mete. Para sacar al burro llaman al ratón, el ratón tampoco quiere y se mete, luego llaman al gato para el ratón, al perro para el gato y al pato para el perro, y así cada vez se repite el mismo problema pero con uno más metido. Es como si hubiera una sola función, "sacar a alguien", que cuando no funciona se vuelve a usar a sí misma con un nuevo personaje para sacar al anterior. Eso es la recursión: para resolver el problema se vuelve a hacer lo mismo con un caso parecido, y cada uno se queda esperando a que el siguiente termine. La cadena se acaba con Plim Plim, que es el que sí logra sacarlos y ya no llama a nadie más, eso sería el caso base. Cuando él actúa, todo se resuelve de regreso en orden hasta llegar a la chiva, que por fin sale. Si nunca llegara alguien que sí lo hiciera, la canción no terminaría, como una recursión sin caso base.
