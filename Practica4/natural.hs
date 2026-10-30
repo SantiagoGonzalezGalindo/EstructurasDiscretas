@@ -36,3 +36,13 @@ a_entero (S n) = 1 + a_entero n
 potenciaNat :: Natural -> Natural -> Natural
 potenciaNat b Cero = S Cero
 potenciaNat b (S e) = multiNat b (potenciaNat b e)
+
+{-
+    Funcion : facNat
+    Descripcion: Recibe un natural y regresa su factorial. El factorial de Cero es S Cero (o sea 1), y el de cualquier otro es el numero por el factorial del anterior. Usa multiNat del modulo Auxiliar.
+    Uso: facNat (S (S (S Cero))) = S (S (S (S (S (S Cero)))))
+-}
+
+facNat :: Natural -> Natural
+facNat Cero = S Cero
+facNat (S n) = multiNat (S n) (facNat n)
