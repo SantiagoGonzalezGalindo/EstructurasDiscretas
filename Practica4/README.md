@@ -6,6 +6,10 @@ R: La práctica sirve para practicar la recursión con tipos de datos hechos con
 - Usar pattern matching para separar el caso base del caso recursivo.
 - Poner las funciones auxiliares en un módulo aparte, en este caso: Auxiliar, e importarlo.
 
+2. Tiempo requerido en realizar la practica completa
+
+R: Terminé la práctica en aproximadamente 3 horas y media.
+
 La Chivita Recursiva
 
 R: En la canción la chiva no se quiere salir, entonces mandan al burro para que la saque, pero el burro no quiere sacarla y también se mete. Para sacar al burro llaman al ratón, el ratón tampoco quiere y se mete, luego llaman al gato para el ratón, al perro para el gato y al pato para el perro, y así cada vez se repite el mismo problema pero con uno más metido. Es como si hubiera una sola función, "sacar a alguien", que cuando no funciona se vuelve a usar a sí misma con un nuevo personaje para sacar al anterior. Eso es la recursión: para resolver el problema se vuelve a hacer lo mismo con un caso parecido, y cada uno se queda esperando a que el siguiente termine. La cadena se acaba con Plim Plim, que es el que sí logra sacarlos y ya no llama a nadie más, eso sería el caso base. Cuando él actúa, todo se resuelve de regreso en orden hasta llegar a la chiva, que por fin sale. Si nunca llegara alguien que sí lo hiciera, la canción no terminaría, como una recursión sin caso base.
