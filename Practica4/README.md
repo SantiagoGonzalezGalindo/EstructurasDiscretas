@@ -42,3 +42,8 @@ R: Porque restaEnt necesita saber cuál de los dos positivos es más grande para
 R: Me quedaría con enteros.hs. Porque entero.hs al probarlo la resta da mal o marca error en todos los casos donde el segundo número es negativo y cuando el primero es negativo y el segundo positivo. En cambio, a enteros.hs solo le faltan los casos de cero con cero: agregando sumaEnt Cero Cero = Cero y restaEnt Cero Cero = Cero, la suma y la resta dan bien en todos los casos.
 
 
+Fuentes de consulta / Referencias:
+
+Hudak, P., Peterson, J. y Fasel, J. (2000). A gentle introduction to Haskell, version 98: Patterns. Haskell.org. Recuperado el 29 de octubre de 2026, de https://www.haskell.org/tutorial/patterns.html
+
+Hudak, P., Peterson, J. y Fasel, J. (2000). A gentle introduction to Haskell, version 98: Values and types. Haskell.org. Recuperado el 29 de octubre de 2026, de https://www.haskell.org/tutorial/goodies.html
