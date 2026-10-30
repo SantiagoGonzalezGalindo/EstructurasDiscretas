@@ -13,3 +13,7 @@ En entero.hs los casos base son las identidades con Zero n + 0 = n y n - 0 = n y
 
 En enteros.hs hay uno para cada combinación de signos: positivo, negativo o cero y cuando el resultado puede ser cero entonces revisa con un if y == si los dos números son iguales. Para restar dos positivos usa mayorEnt para saber cuál es más grande, así casi todos los resultados salen bien pero le faltan los casos de cero con cero: sumaEnt Cero Cero y restaEnt Cero Cero marcan error y mayorEnt también marca error cuando los dos números son iguales debido a que termina llegando a mayorEnt Cero Cero y ese renglón no existe.
 
+2. ¿Por qué se tiene implementada la operación mayorEnt en el archivo enteros.hs?
+
+R: Porque restaEnt necesita saber cuál de los dos positivos es más grande para saber el signo del resultado. Si el primero es mayor entonces la resta sale positiva y sigue con restaEnt n m y si no, entonces voltea la resta y le pone un Neg al resultado. Por ejemplo: para 2 - 5 como 5 es mayor entonces calcula Neg (restaEnt 4 1) que da -3. En entero.hs no hace falta porque baja los dos números al mismo tiempo y el signo sale solo al llegar a Zero.
+
