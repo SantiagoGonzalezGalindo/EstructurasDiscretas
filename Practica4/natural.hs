@@ -16,3 +16,13 @@ import Auxiliar
 a_natural :: Int -> Natural
 a_natural 0 = Cero
 a_natural n = S (a_natural (n - 1))
+
+{-
+    Funcion : a_entero
+    Descripcion: Recibe un Natural y regresa su valor como entero. Cero vale 0 y cada S vale 1 mas que lo que tiene adentro.
+    Uso: a_entero Cero = 0 , a_entero (S (S (S Cero))) = 3
+-}
+
+a_entero :: Natural -> Int
+a_entero Cero = 0
+a_entero (S n) = 1 + a_entero n
